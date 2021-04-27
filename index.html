@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Watch That Box</title>
+</head>
+<style>
+    .button {
+        background-color: #4CAF50;
+    }
+
+    .float {
+        float: right;
+    }
+
+    .refelction {
+        -webkit-box-reflect: right;
+
+    }
+
+    .round {
+        border-radius: 150px;
+        background: #73AD21;
+        padding: 20px;
+        width: 150px;
+        height: 150px;
+    }
+
+    .shadow {
+        box-shadow: 0 8px 16px 0 rgba(224, 43, 200, 0.904), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    #reset {
+        height: 150px;
+        width: 150px;
+        background-color: orange;
+        margin: 25px
+    }
+
+    .grow {
+        transform: scale(1.2);
+    }
+
+    #box {
+        background-color: blue;
+        height: 150px;
+        width: 150px;
+        margin: 25px;
+    }
+
+    .fade-in {
+        opacity: 1;
+        animation-name: fadeInOpacity;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in;
+        animation-duration: 2s;
+    }
+
+    @keyframes fadeInOpacity {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+</style>
+
+<body>
+
+    <p>Press the buttons to change the box!</p>
+
+
+
+    <div id="box" style="height:150px; width:150px;
+     background-color:orange; margin:25px"></div>
+
+    <button onclick="grow()" id="button1">Grow</button>
+    <button onclick="blue()" id="button2">Blue</button>
+    <button onclick="fade()" id="button3">Fade</button>
+    <button onclick="shadow()" id="button4">Shadow</button>
+    <button onclick="refelction()" id="button5">Refelction</button>
+    <button onclick="round()" id="button6">Round</button>
+    <button onclick="button()" id="button7">Button Change</button>
+    <button onclick="reset()" id="button8">Reset</button>
+
+    <script type="text/javascript" src="javascript.js"></script>
+
+</body>
+
+</html>
